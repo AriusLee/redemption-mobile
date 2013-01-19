@@ -200,7 +200,8 @@ p, h1, h2, h3, h4, h5, h6 {
   text-shadow: 0 1px #fff;
 }
 
-.redemption_wrapper p a {
+.redemption_wrapper p a,
+.overlay_card p a {
   color: #323A39;
 }
 
@@ -233,7 +234,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .card_wrapper dd:before,
-.card_wrapper dd:after {
+.card_wrapper dd:after,
+.overlay_card .redeem_code:before,
+.overlay_card .redeem_code:after {
   content: "";
   width: 78px;
   height: 8px;
@@ -242,13 +245,15 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-top: -4px;
 }
 
-.card_wrapper dd:before {
+.card_wrapper dd:before,
+.overlay_card .redeem_code:before {
   background: url(../images/card-divider-left.png) no-repeat;
   left: 0;
   margin-left: -8px;
 }
 
-.card_wrapper dd:after {
+.card_wrapper dd:after,
+.overlay_card .redeem_code:after {
   background: url(../images/card-divider-right.png) no-repeat;
   right: 0;
   margin-right: -8px;
@@ -264,6 +269,54 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 11px;
   padding-top: 6px;
   letter-spacing: 1px;
+}
+
+.redemption_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.85);
+}
+
+.overlay_card {
+  width: 282px;
+  height: 229px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  margin-top: -114px;
+  margin-left: -141px;
+  background: url(../images/bg-overlay.png) no-repeat;
+  box-shadow: 0 1px 4px 0 #000;
+}
+
+.overlay_card p {
+  color: #728585;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.overlay_card .timer {
+  color: #FF0000;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 15px;
+  padding: 6px 0;
+}
+
+.overlay_card .redeem_code {
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  margin: 10px 0;
+}
+
+.overlay_card .action_row a {
+  display: block;
+  margin-bottom: 5px;
 }
 
 /*
