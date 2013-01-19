@@ -98,10 +98,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .button_orange {
   outline: none;
+  font-size: 12px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: #fff !important;
   display: inline-block;
-  text-shadow: 0 1px #bf2300;
+  text-shadow: rgba(0,0,0,0.35) 0 -1px 1px;
   text-align: center;
   padding: 8px 0;
   border-radius: 2px;
@@ -115,6 +117,30 @@ p, h1, h2, h3, h4, h5, h6 {
   background: -ms-linear-gradient(top,  #ffb62b 0%,#e66100 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #ffb62b 0%,#e66100 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb62b', endColorstr='#e66100',GradientType=0 ); /* IE6-9 */
+  
+}
+
+.button_gray {
+  outline: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666 !important;
+  display: inline-block;
+  text-shadow: 0 1px #fff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.75);
+  border: 1px solid #828181;
+  background: #f2f2f2; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f2f2f2 0%, #cccccc 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f2f2f2 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #f2f2f2 0%,#cccccc 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #f2f2f2 0%,#cccccc 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #f2f2f2 0%,#cccccc 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
   
 }
 
@@ -162,12 +188,28 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 282px;
 }
 
+.redemption_wrapper a.half {
+  width: 138px;
+}
+
+.redemption_wrapper p {
+  color: #637373;
+  font-size: 12px;
+  padding: 10px 20px 0;
+  line-height: 1.5em;
+  text-shadow: 0 1px #fff;
+}
+
+.redemption_wrapper p a {
+  color: #323A39;
+}
+
 .redemption_wrapper a.terms {
   color: #637373;
   font-size: 11px;
   letter-spacing: 1px;
-  padding-top: 10px;
   display: inline-block;
+  line-height: 1em;
 }
 
 .card_wrapper dl {
